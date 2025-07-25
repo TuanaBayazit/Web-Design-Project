@@ -1,0 +1,575 @@
+        html {
+        scroll-behavior: smooth;
+        }
+        .main-container {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 10px; 
+            left: 50%;
+            z-index: 1; 
+        }
+        .scroll-indicator img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .scroll-indicator a {
+            display: inline-block;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        .home {
+            position: relative;
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #219ebc;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .home::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #e5d2d2;
+            border-radius: 10px;
+            background-color: rgba(234, 205, 205, 0.5); 
+            z-index: 1;
+        }
+
+        .welcome-content {
+            position: relative;
+            z-index: 2;
+        
+        }
+
+        .welcome-content h1 {
+            letter-spacing: 5px;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-content p{
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .welcome-content li{
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0eeee;
+            color: #333;
+        }
+        header {
+            color: #fff;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #219ebc;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #023047;
+            color: rgb(227, 190, 190);
+        }
+        section {
+            padding: 40px 20px;
+        }
+
+        footer {
+            background-color: #8ecae6;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .about-me-section {
+            padding: 20px;
+            border: 1px solid #52cfe8;
+            border-radius: 8px;
+            background-color: #219ebc;
+            color: white;
+            margin-bottom: 10px;
+            
+        }
+
+        .about-me-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            
+        }
+
+        .about-me-image {
+            flex: 1;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .about-enjoy-img{
+            flex: 1;
+            max-width: 300px;
+            margin: 20px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .about-me-text {
+            flex: 2;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+            color: #219ebc;
+        }
+
+        .education-table th,
+        .education-table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .education-table th {
+            font-weight: bold;
+        }
+
+        .education-table tr:nth-child(odd) {
+            background-color: whitesmoke;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: #cbcbcb;
+        }
+
+        .education-table tr:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .education-table td {
+            border: 2px solid #219ebc;
+        }
+
+        .education-table td:last-child {
+            border-right: none;
+        }
+
+        .education-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .skills {
+            background-color: rgb(247, 244, 244);
+            border: 1px solid #2dd1ea;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #1fa1b5;
+        }
+        .skills h2{
+            border-left: 3px solid;
+            padding: 5px;
+            border-radius: 2px;
+        }
+        .skill {
+            border: 1px solid #2dd1ea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .skill-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .skill-row h3 {
+            margin: 0;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        details:not([open]) .arrow {
+            transform: rotate(0deg);
+        }
+
+        details[open] .arrow {
+            transform: rotate(180deg);
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .skills-table th {
+            background-color: #cbcbcb;
+            color: white;
+            font-size: 1.5em;
+            padding: 10px;
+            text-align: center;
+            color: #219ebc;
+        }
+
+        .skills-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        .skills-table ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .skills-table ul li {
+            margin-bottom: 5px;
+        }
+
+        .skills-table td:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        .skills-table td:first-child ul {
+            list-style-type: disc;
+        }
+
+        .skills-table td ul ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        .experience-section {
+            background-color: #219ebc;
+            color: white;
+            border-radius: 10px;
+            display: grid;
+            flex-direction: column;
+            align-items: start;
+            border: 2px solid #03b0d2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+        .experience-section img{
+            display: flex;
+            width: 60%;
+
+        }
+
+        .experience-section h2{
+            border-left: 3px solid;
+            padding: 5px;
+            box-shadow: #354750;
+            border-radius: 2px;
+        }
+        .experience-section h3{
+            border-bottom: 1px dashed;
+            border-bottom-width: 3px;
+        }
+        
+        .experience-box1{
+            grid-column: 1/2;
+            border-right: 1px solid ;
+            padding: 20px;
+            margin-top: 0;
+        }
+        .experience-box2{
+            grid-column: 2/3;
+            margin: auto;
+            border-right: 1px solid ;
+            padding: 20px;
+            margin-top: 0;
+
+        }
+        .experience-box3{
+            grid-column:3;
+            margin: auto;
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        .experience-title {
+            padding: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid ;
+            margin: 10px;
+            
+        }
+
+        .experience-description {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .experience-description .exp-img{
+            width: 60%;
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+
+        .experience-description a{
+            color: white;
+        }
+        .experience-description a:hover{
+            color: rgb(217, 155, 155);
+        }
+        .experience-description .int-img{
+            flex: 1;
+            width: 350px;
+            margin-bottom: 15px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .experience-description .vol-img{
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+
+        .contact-section {
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            color: #219ebc;
+        }
+
+        form label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #219ebc;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none; 
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form button {
+            background-color: #219ebc;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #176080;
+        }
+
+        
+        @media (max-width: 768px) {
+            .about-me, .experience-section {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+                text-align: center;
+            }
+            .skills {
+                flex-direction: column;
+            }
+
+            .about-me-content img {
+                margin-bottom: 15px;
+            }
+            .experience-section {
+               grid-template-columns: 1fr; 
+
+            }
+            .experience-section img{
+                width: 80%;
+            }
+            .experience-description .int-img{
+                width: 80%;
+            }
+
+            .education-table {
+                font-size: 10px; 
+                width: 100%; 
+            }
+
+            .education-table th,
+            .education-table td {
+                padding: 8px; 
+            }
+
+            .about-me-container {
+                flex-direction: column;
+                align-items: flex-start; 
+            }
+            .skills-table {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .skills-table th {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+
+            .skills-table td {
+                font-size: 1em;
+                padding: 8px;
+            }
+        }
+        @media (max-width: 480px)  {
+            .navbar{
+                display:flex;
+                flex-direction: column;
+            }
+            .about-me-container,
+            .experience-container {
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+            th,
+            td {
+                padding: 4px; 
+            }
+            .about-me-text{
+                font-size: 10px;
+            }
+            .about-me-image{
+                width: 60%;
+            }
+            .about-enjoy-img{
+                width: 60%;
+            }
+
+            .experience-section{
+                display: flex;
+                
+            }
+            .experience-section img{
+                width: 50%;
+            }
+            .skills-table {
+                display: block;
+                width: 100%;
+            }
+
+            .skills-table thead {
+                display: block; 
+            }
+
+            .skills-table th {
+                text-align: center;
+                padding: 10px 5px;
+            }
+
+            .skills-table tbody {
+                display: block;
+                width: 100%;
+            }
+
+            .skills-table tr {
+                display: block;
+                border: 1px solid #ddd;
+            }
+
+            .skills-table td {
+                display: block;
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .skills-table td ul {
+                padding-left: 15px;
+            }
+
+            .skills-table td ul ul {
+                padding-left: 30px;
+            }
+        }
