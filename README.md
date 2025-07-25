@@ -1,5 +1,5 @@
 # Web-Design-Project
-This project was created within the scope of CEIT419 Web Design course in the Computer Education and Instructional Technology (CEIT) department. It provides detailed information about me.
+This project was created within the scope of CEIT419 Web Design course in the Computer Education and Instructional Technology (CEIT) department. It provides detailed information about Tuana Bayazıt.
 ## Featured
 
 - Information you can learn about me
@@ -19,4 +19,4 @@ This project is for educational and non-commercial purposes.
 
 ## Contributing
 
-This project is maintained by CEIT students. For suggestions or improvements, feel free to open an issue or submit a pull request.
+This project is maintained by Tuana Bayazıt. For suggestions or improvements, feel free to open an issue or submit a pull request.
